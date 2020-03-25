@@ -18,6 +18,104 @@ using namespace std;
 
 TEST_CASE("Test replacement of v and w") {
 	string text = "vov I really want to vrite my oVn Vows";
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+    CHECK(find(text, "Wow") == string("vov"));
+
+
 	CHECK(find(text, "Wow") == string("vov"));
 	CHECK(find(text, "want") == string("want"));
 	CHECK(find(text, "write") == string("vrite"));
