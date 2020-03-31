@@ -15,6 +15,9 @@ demo: Demo.o $(OBJECTS)
 test: TestCounter.o Test.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o test
 
+test2: TestCounter.o test2.o $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $^ -o test2
+
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
