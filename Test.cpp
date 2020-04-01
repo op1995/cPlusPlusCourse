@@ -183,6 +183,7 @@ TEST_CASE("Test replacement of lower-case and upper-case") {
     CHECK(find(text, "Happi") == string("Happi"));
     CHECK(find(text, "HAPPI") == string("Happi"));
     CHECK(find(text, "HaPpI") == string("Happi"));
+    CHECK_THROWS(find(text, "Happi xxx"));
     /* Add more checks here */
 }
 

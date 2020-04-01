@@ -13,6 +13,9 @@ namespace phonetic {
         // cout << "looking for the word " + word +"\n";
     	if (word.size()==0) throw invalid_argument("Inserted word is of length 0!");
         if (text.size()==0) throw invalid_argument("Inserted text is of length 0!");
+        if (word.find(" ") != std::string::npos) {
+            throw invalid_argument("word searched for can't contain space!");
+        }
 
         std::istringstream iss(text);
 
