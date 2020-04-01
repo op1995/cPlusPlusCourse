@@ -37,22 +37,19 @@ namespace phonetic {
                     // cout << current_word[i];
                     // cout << "\n";
 
-                    if(current_word.compare("is")==0){
-                        string comp = "comparing the letters ";
-                        comp = comp + word[i] + " and " + current_word[i] + "\n";
-                        cout << comp;
-                    }
+                    // if(current_word.compare("is")==0){
+                    // string comp = "comparing the letters ";
+                    // comp = comp + word[i] + " and " + current_word[i] + "\n";
+                    // cout << comp;
+                    // }
 
                     if (!(letter_match(word[i], current_word[i]))) {
                         // string failed = "the letters that didn't match were at place ";
-                        // failed = failed + to_string(i);
-                        // cout << "the letters that didn't match were at place " + (int)i;
+                        // failed = failed + to_string(i) + "\n";
                         // cout << failed;
                         // cout << " and " + current_word[i];
-                        if(current_word.compare("is")==0) cout << "flag is now false!\n";
                         flag = false;
                     }// end if letters match
-                    if(current_word.compare("is")==0) cout << "true!\n";
                 }// end for loop
                 if (flag) {
                     // cout << "HERE123";
@@ -83,8 +80,14 @@ namespace phonetic {
             current = current + 32;
         }
 
-        if(original == current) return true;
-        
+        // string stg = "original is ";
+        // stg = stg + original + " and current is " + current +"\n";
+        // cout << stg;
+
+        if(original == current) {
+            // cout << "returning TRUE from simple compare\n";
+            return true;
+        }
         if (replacable_letters(original, current)) return true; //if the letters are replaceable, return true
 
         return false; //if you got here, all failed. Return false.
@@ -101,50 +104,88 @@ namespace phonetic {
         switch(original)
         {
             case 'v':
+                // cout << "\n1\n";
                 if(current=='w')return true;
+                else return false;
             case 'w':
+                // cout << "\n2\n";
                 if(current=='v')return true;
+                else return false;
             case 'b':
+                // cout << "\n3\n";
                 if(current=='f')return true;
                 if(current=='p')return true;
+                else return false;
             case 'f':
+                // cout << "\n4\n";
                 if(current=='b')return true;
                 if(current=='p')return true;
+                else return false;
             case 'p':
+                // cout << "\n5\n";
                 if(current=='b')return true;
                 if(current=='f')return true;
+                else return false;
             case 'g':
+                // cout << "\n6\n";
                 if(current=='j')return true;
+                else return false;
             case 'j':
+                // cout << "\n7\n";
                 if(current=='g')return true;
+                else return false;
             case 'c':
+                // cout << "\n8\n";
                 if(current=='k')return true;
                 if(current=='q')return true;
+                else return false;
             case 'k':
+                // cout << "\n9\n";
                 if(current=='c')return true;
                 if(current=='q')return true;
+                else return false;
             case 'q':
+                // cout << "\n10\n";
                 if(current=='c')return true;
                 if(current=='k')return true;
+                else return false;
             case 's':
+                // cout << "\n11\n";
                 if(current=='z')return true;
+                else return false;
             case 'z':
+                // cout << "\n12\n";
                 if(current=='s')return true;
+                else return false;
             case 'd':
+                // cout << "\n13\n";
                 if(current=='t')return true;
+                else return false;
             case 't':
+                // cout << "\n14\n";
                 if(current=='d')return true;
+                else return false;
             case 'o':
+                // cout << "\n15\n";
                 if(current=='u')return true;
+                else return false;
             case 'u':
+                // cout << "\n16\n";
                 if(current=='o')return true;
+                else return false;
             case 'i':
+                // cout << "\n17\n";
                 if(current=='y')return true;
+                else return false;
             case 'y':
+                // cout << "\n18\n";
                 if(current=='i')return true;
+                else return false;
             default:
+                // cout << "\nDEFAULT\n";
                 return false;
         }//end switch
+        return false;
     }//end replacable letters function
 
 

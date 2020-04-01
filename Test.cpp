@@ -78,7 +78,7 @@ TEST_CASE("Test replacement of g and j") {
     CHECK(find(text3, "Generic") == string("jeneric")); //test to make sure text with 1 word in it works as well
 
     string text4 = "Generic";
-    CHECK(find(text3, "Generic") == string("Generic")); //as above, without mistakes or changes
+    CHECK(find(text4, "Generic") == string("Generic")); //as above, without mistakes or changes
 }
 
 TEST_CASE("Test replacement of c and k and q") {
@@ -97,7 +97,7 @@ TEST_CASE("Test replacement of c and k and q") {
 }
 
 TEST_CASE("Test replacement of s and z") {
-    string text = "so zo soom zyrup Ztewie zuper zupper roro zum sumba zombie"; //so so zoom syrup Stewie super supper zoro sum Zumba zombie
+    string text = "so zo soom zyrup Ztewie zuper zupper soro zum sumba zombie"; //so so zoom syrup Stewie super supper zoro sum Zumba zombie
     CHECK(find(text, "so") == string("so"));
     CHECK(find(text, "so") == string("so")); //make sure so is returned again, and not zo
     CHECK(find(text, "zoom") == string("soom"));
@@ -106,7 +106,7 @@ TEST_CASE("Test replacement of s and z") {
     CHECK(find(text, "Stewie") == string("Ztewie"));
     CHECK(find(text, "super") == string("zuper"));
     CHECK(find(text, "supper") == string("zupper"));
-    CHECK(find(text, "Zoro") == string("roro"));
+    CHECK(find(text, "Zoro") == string("soro"));
     CHECK(find(text, "sum") == string("zum"));
     CHECK(find(text, "Zumba") == string("sumba"));
     CHECK(find(text, "zombie") == string("zombie"));

@@ -5,8 +5,9 @@ using namespace phonetic;
 #include <string>
 using namespace std;
 
-TEST_CASE("Test replacement of v and w") {
-	string text = "vov I really want to vrite my oVn Vows";
+TEST_CASE("Test replacement of p and b and f") {
+    string text = "so zo soom zyrup Ztewie zuper zupper soro zum sumba zombie"; //so so zoom syrup Stewie super supper zoro sum Zumba zombie
 
-	CHECK(find(text, "vows") == string("Vows"));
+    CHECK(find(text, "Zoro") == string("soro"));
+
 }
